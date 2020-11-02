@@ -3,4 +3,4 @@ project(testC C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(testC main.c hello.c hello.h)
+add_executable(testC main.c hello.c hello.h animal.c animal.h hookFunction.c hookFunction.h)

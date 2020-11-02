@@ -14,16 +14,6 @@ typedef struct Object {
     char strArr[20];
 } Object;
 
-void passObject(Object *obj);
-
-void printObject(Object obj);
-
-void hello();
-
-void hello2();
-
-Object hello3(char *str); //指针函数
-Object *hello31(char *str); //指针函数
-Object *hello4(char *str); //指针函数
+void testHello();
 
 #endif //TESTC_HELLO_H
