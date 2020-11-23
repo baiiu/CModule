@@ -2,6 +2,7 @@
 #include "hello.h"
 #include "hookFunction.h"
 #include "testStr.h"
+#include "testSocket.h"
 
 
 int main() {
@@ -13,11 +14,14 @@ int main() {
 
 //    testHook();
 
-    printf("===========start----------\n");
+//    testStr();
 
-    testStr();
+    printf("===========start===========\n");
 
-    printf("===========end----------\n");
+    testSocket();
+
+    printf("\n");
+    printf("===========end===========s\n");
 
     return 0;
 }
