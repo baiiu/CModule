@@ -9,6 +9,8 @@
 #include <zconf.h>
 #include <netdb.h>
 #include <net/if_var.h>
+#include <net/if.h>
+#include <sys/ioctl.h>
 #include "testSocket.h"
 
 #define SOCKET int
@@ -54,12 +56,27 @@ void testSocket() {
         return;
     }
 
+    printf("\nconnect\n");
 
 
-    // can ping
-//    printf("server ip: %s\n", inet_ntoa(addr.sin_addr));
+    socklen_t len;
+    char buf[30] = "";
 
-    printf("connect");
+    // peer ip
+    getpeername(fd, (struct sockaddr *) &addr, &len);
+    const char *serverip = inet_ntop(AF_INET, &addr.sin_addr, buf, sizeof(buf));
+    int serverport = ntohs(addr.sin_port);
+    printf("server ip: %s\n", serverip);
+    printf("server port: %d\n", serverport);
+
+
+    // local ip
+    getsockname(fd, (struct sockaddr *) &addr, &len);
+    const char *localip = inet_ntop(AF_INET, &addr.sin_addr, buf, sizeof(buf));
+    int port = ntohs(addr.sin_port);
+    printf("local ip: %s\n", localip);
+    printf("local port: %d\n", port);
+
     closesocket(fd);
 
 }
