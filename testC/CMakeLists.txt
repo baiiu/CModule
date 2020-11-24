@@ -12,4 +12,4 @@ add_executable(
         hookFunction.c hookFunction.h
         testStr.c testStr.h
         testSocket.c testSocket.h
-)
+        common.h)

@@ -18,7 +18,6 @@
 #define closesocket(s)    close(s)
 
 void testSocket() {
-
     struct sockaddr_in addr;
     memset(&addr, 0, sizeof(struct sockaddr_in));
     addr.sin_family = AF_INET;
@@ -60,23 +59,41 @@ void testSocket() {
 
 
     socklen_t len;
-    char buf[30] = "";
 
-    // peer ip
+
+    TLink tLink;
+    memset(&tLink, 0, sizeof(TLink));
+
+    // server ip
     getpeername(fd, (struct sockaddr *) &addr, &len);
+    printf("socklen_t: %d\n", len);
+    char buf[16] = "";
     const char *serverip = inet_ntop(AF_INET, &addr.sin_addr, buf, sizeof(buf));
     int serverport = ntohs(addr.sin_port);
     printf("server ip: %s\n", serverip);
     printf("server port: %d\n", serverport);
 
+    AVal serverIP;
+    memset(&serverIP, 0, sizeof(AVal));
+    serverIP.av_val = serverip;
+    serverIP.av_len = strlen(serverip);
+    printf("AVal#serverIP: %s,%d\n", serverIP.av_val, serverIP.av_len);
+
+
 
     // local ip
     getsockname(fd, (struct sockaddr *) &addr, &len);
+    printf("socklen_t: %d\n", len);
     const char *localip = inet_ntop(AF_INET, &addr.sin_addr, buf, sizeof(buf));
     int port = ntohs(addr.sin_port);
     printf("local ip: %s\n", localip);
     printf("local port: %d\n", port);
 
-    closesocket(fd);
+    AVal localIP;
+    memset(&localIP, 0, sizeof(AVal));
+    localIP.av_len = strlen(localip);
+    localIP.av_val = localip;
+    printf("AVal#localIP: %s,%d\n", localIP.av_val, localIP.av_len);
 
+    closesocket(fd);
 }
