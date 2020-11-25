@@ -7,7 +7,12 @@
 
 #include "common.h"
 
+// gethostbyname
 void testSocket();
 
+// getaddrinfo
+void testSocket2();
+
+void testSocket3();
 
 #endif //TESTC_TESTSOCKET_H
