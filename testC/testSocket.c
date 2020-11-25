@@ -144,7 +144,12 @@ void testSocket() {
 
 
     if (addr.sin_addr.s_addr == INADDR_NONE) {
+        printf("s_addr is INADDR_NONE\n");
+
         struct hostent *host = gethostbyname(hostname);
+
+        printf("gethostbyname: %s\n", host->h_name);
+
 
         for (int i = 0; host->h_addr_list[i] != 0; ++i) {
             struct in_addr in;
