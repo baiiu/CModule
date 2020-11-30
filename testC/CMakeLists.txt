@@ -6,10 +6,13 @@ set(CMAKE_C_STANDARD 11)
 add_executable(
         testC
         main.c
+        common.h
 
         hello.c hello.h
         animal.c animal.h
         hookFunction.c hookFunction.h
         testStr.c testStr.h
         testSocket.c testSocket.h
-        common.h)
+        testStruct.c testStruct.h
+
+)
