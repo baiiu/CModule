@@ -11,4 +11,19 @@
 
 void testStruct();
 
+struct C {
+    int c;
+} C;
+
+struct B {
+    int b;
+    struct C c;
+} B;
+
+struct A {
+    int a;
+    struct B b;
+} A;
+
+
 #endif //TESTC_TESTSTRUCT_H

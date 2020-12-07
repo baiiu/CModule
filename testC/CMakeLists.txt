@@ -15,4 +15,4 @@ add_executable(
         testSocket.c testSocket.h
         testStruct.c testStruct.h
 
-)
+        testDefine.c testDefine.h)

@@ -6,10 +6,14 @@
 
 
 void testStruct() {
-    SET_RCVTIMEO(tv, 30);
 
-    char *str = (char *) &tv;
+    struct A *a = malloc(sizeof(A));
+    struct B *b = malloc(sizeof(B));
+    struct C *c = malloc(sizeof(C));
 
-    printf("%s, sizeof: %d", str, sizeof(tv));
+    printf("%d, sizeofa\n", sizeof(*a));
+    printf("%d, sizeofb\n", sizeof(*b));
+    printf("%d, sizeofc\n", sizeof(*c));
+
 
 }
