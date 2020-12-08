@@ -5,6 +5,7 @@
 #include "testSocket.h"
 #include "testStruct.h"
 #include "testDefine.h"
+#include "testSimple.h"
 
 
 int main() {
@@ -24,10 +25,11 @@ int main() {
 
 
 //    testStruct();
+//    testDefine();
 
     printf("===========start===========\n");
 
-    testDefine();
+    testSimple();
 
     printf("\n");
     printf("===========end===========s\n");
