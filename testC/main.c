@@ -25,12 +25,12 @@ int main() {
 //    testSocket3();
 
 
-    testStruct();
+//    testStruct();
 
 //    testDefine();
 
 
-//    testSimple();
+    testSimple();
 
     printf("\n");
     printf("===========end===========\n");
