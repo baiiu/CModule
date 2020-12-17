@@ -3,13 +3,15 @@
 //
 
 #include <printf.h>
-#include "test.h"
+#include "day1.h"
+#include "day2.h"
 
 int main() {
 
     printf("===========start===========\n");
 
-    hello();
+//    day1();
+    day2();
 
     printf("\n");
     printf("===========end===========\n");

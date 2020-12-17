@@ -8,6 +8,6 @@ add_executable(
 
         main.c
 
-        test.c test.h
+        day1.c day1.h
 
-)
+        day2.c day2.h common.h)
