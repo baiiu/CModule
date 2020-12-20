@@ -7,7 +7,10 @@ add_executable(
         CBook
 
         main.c
+        common.h
 
         day1.c day1.h
+        day2.c day2.h
+        day3.c day3.h
 
-        day2.c day2.h common.h)
+)
