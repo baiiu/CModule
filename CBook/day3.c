@@ -4,6 +4,15 @@
 
 #include "day3.h"
 
-void day3() {
+void testArr() {
+    int arr[10] = {};
 
+    for (int i = 0; i < 10; ++i) {
+        printf("%d", arr[i]);
+    }
+
+}
+
+void day3() {
+    testArr();
 }
