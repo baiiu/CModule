@@ -17,4 +17,4 @@ add_executable(
         testDefine.c testDefine.h
         testSimple.c testSimple.h
 
-)
+        testArr.c testArr.h)

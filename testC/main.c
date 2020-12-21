@@ -6,11 +6,10 @@
 #include "testStruct.h"
 #include "testDefine.h"
 #include "testSimple.h"
+#include "testArr.h"
 
 
 int main() {
-
-    printf("===========start===========\n");
 
 //    testHello();
 
@@ -29,10 +28,14 @@ int main() {
 
 //    testDefine();
 
+//    testSimple();
 
-    testSimple();
+    printf("===========start===========\n");
 
     printf("\n");
+
+    testArr();
+
     printf("===========end===========\n");
 
     return 0;
