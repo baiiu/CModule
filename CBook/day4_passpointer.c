@@ -38,7 +38,52 @@ void testReferenceI() {
     printf("after change: %d\n", i);
 }
 
+
+void testMove() {
+    int arr[5] = {1, 2, 3, 4, 5};
+    int *p = arr; // arr即首地址
+
+    for (int i = 0; i < 5; ++i) {
+        printf("%d", p[i]);
+    }
+
+    printf("\n");
+
+    for (int i = 0; i < 5; ++i) {
+        printf("%d", *(p + i)); // + 1即 +基类型的1个长度
+    }
+
+    printf("\n");
+
+    p = &arr[4];
+    for (int i = 0; i < 5; ++i) {
+        printf("%d", *(p - i));
+    }
+
+}
+
+void testPointerIncrease() {
+    int arr[3] = {1, 5, 9};
+    int *p;
+    int j;
+
+    p = arr;
+    j = *p++;
+//    j = (*p)++;
+//    j = *++p;
+//    j = ++*p;
+//    j = *p++;
+    printf("arr[0]=%d, j=%d, *p=%d\n", arr[0], j, *p);
+
+    j = p[0]++;
+    printf("arr[0]=%d, j=%d, *p=%d, p[0]=%d", arr[0], j, *p, p[0]);
+}
+
+
+// 指针传递、指针偏移
 void day4_testPassPointer() {
 //    testI();
-    testReferenceI();
+//    testReferenceI();
+//    testMove();
+    testPointerIncrease();
 }

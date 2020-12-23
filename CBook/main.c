@@ -7,6 +7,7 @@
 #include "day3.h"
 #include "day4.h"
 #include "day4_passpointer.h"
+#include "day4_pointerAndArr.h"
 
 int main() {
 
@@ -16,7 +17,8 @@ int main() {
 //    day2();
 //    day3();
 //    day4();
-    day4_testPassPointer();
+//    day4_testPassPointer();
+    day4_testPointerAndArr();
 
     printf("\n");
     printf("===========end===========\n");
