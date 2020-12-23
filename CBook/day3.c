@@ -56,6 +56,7 @@ void testStrFun() {
     printf("strcmp = %d\n", strcmp(c, d));
 }
 
+// 数组
 void day3() {
 //    testArr();
 //    testArrArr();

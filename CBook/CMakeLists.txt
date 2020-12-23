@@ -13,4 +13,4 @@ add_executable(
         day2.c day2.h
         day3.c day3.h
 
-)
+        day4.c day4.h day4_passpointer.c day4_passpointer.h)
