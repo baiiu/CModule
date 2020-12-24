@@ -8,6 +8,9 @@
 #include "day4.h"
 #include "day4_passpointer.h"
 #include "day4_pointerAndArr.h"
+#include "day4_野指针.h"
+#include "day4_stackoverflow.h"
+#include "day4_栈和堆差别.h"
 
 int main() {
 
@@ -18,7 +21,10 @@ int main() {
 //    day3();
 //    day4();
 //    day4_testPassPointer();
-    day4_testPointerAndArr();
+//    day4_testPointerAndArr();
+//    day4_testNoPointer();
+//    day4_testStackOverFlow();
+    day4_testMallocAndStack();
 
     printf("\n");
     printf("===========end===========\n");
