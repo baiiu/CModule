@@ -2,7 +2,7 @@
 // Created by baiiu on 2020/12/22.
 //
 
-#include "day4.h"
+#include "day4_直接访问间接访问.h"
 
 
 void testPointer() {

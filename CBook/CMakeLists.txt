@@ -13,4 +13,11 @@ add_executable(
         day2.c day2.h
         day3.c day3.h
 
-        day4.c day4.h day4_passpointer.c day4_passpointer.h day4_pointerAndArr.c day4_pointerAndArr.h day4_野指针.c day4_野指针.h day4_stackoverflow.c day4_stackoverflow.h day4_栈和堆差别.c day4_栈和堆差别.h)
+        day4_直接访问间接访问.c day4_直接访问间接访问.h
+        day4_指针传递和指针偏移.c day4_指针传递和指针偏移.h
+        day4_字符指针和字符数组.c day4_字符指针和字符数组.h
+        day4_野指针.c day4_野指针.h
+        day4_stackoverflow.c day4_stackoverflow.h
+        day4_栈和堆差别.c day4_栈和堆差别.h
+        day4_数组指针.c day4_数组指针.h
+)

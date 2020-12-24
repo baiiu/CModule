@@ -5,12 +5,13 @@
 #include "day1.h"
 #include "day2.h"
 #include "day3.h"
-#include "day4.h"
-#include "day4_passpointer.h"
-#include "day4_pointerAndArr.h"
+#include "day4_直接访问间接访问.h"
+#include "day4_指针传递和指针偏移.h"
+#include "day4_字符指针和字符数组.h"
 #include "day4_野指针.h"
 #include "day4_stackoverflow.h"
 #include "day4_栈和堆差别.h"
+#include "day4_数组指针.h"
 
 int main() {
 
@@ -24,7 +25,9 @@ int main() {
 //    day4_testPointerAndArr();
 //    day4_testNoPointer();
 //    day4_testStackOverFlow();
-    day4_testMallocAndStack();
+//    day4_testMallocAndStack();
+//    day4_testCharPointerArr();
+    day4_testArrPoint();
 
     printf("\n");
     printf("===========end===========\n");
