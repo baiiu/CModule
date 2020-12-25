@@ -12,6 +12,7 @@
 #include "day4_stackoverflow.h"
 #include "day4_栈和堆差别.h"
 #include "day4_数组指针.h"
+#include "day5_二级指针.h"
 
 int main() {
 
@@ -27,7 +28,8 @@ int main() {
 //    day4_testStackOverFlow();
 //    day4_testMallocAndStack();
 //    day4_testCharPointerArr();
-    day4_testArrPoint();
+//    day4_testArrPoint();
+    day5_testPointerPointer();
 
     printf("\n");
     printf("===========end===========\n");

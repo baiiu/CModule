@@ -9,7 +9,7 @@
 /*
  * 在栈上分配超大内存，爆栈了，会抛出stackOverflow
  *
- * windows函数栈大小是1M，linux是10M。
+ * windows函数栈大小是1M，linux是10M,通过 ulimit -a 查看
  */
 void day4_testStackOverFlow() {
 
