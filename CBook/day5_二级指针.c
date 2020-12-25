@@ -23,7 +23,38 @@ void passPointerPointer() {
     printf("i=%d, j=%d, *pi=%d, *pj=%d\n", i, j, *pi, *pj);
 }
 
+void charArrArr() {
+    char arr[5][15] = {"Google", "Facebook", "LinkedIn", "Amazon", "Microsoft"};
+    char *p[5]; //指针数组
+
+    for (int i = 0; i < 5; ++i) {
+        p[i] = arr[i];
+    }
+
+    char **p2 = p;
+    for (int i = 0; i < 5; ++i) {
+        puts(*(p2 + i)); // 二级指针偏移，偏移一个sizeof(char *)
+        puts(p2[i]);
+    }
+}
+
+void charArrArr2() {
+    char arr[5][15] = {"Google", "Facebook", "LinkedIn", "Amazon", "Microsoft"};
+    char **p2 = malloc(5 * sizeof(char *));
+
+    for (int i = 0; i < 5; ++i) {
+        *(p2 + i) = arr[i]; // 直接赋值
+    }
+
+    for (int i = 0; i < 5; ++i) {
+        puts(*(p2 + i)); // 二级指针偏移，偏移一个sizeof(char *)
+        puts(p2[i]);
+    }
+}
+
 
 void day5_testPointerPointer() {
-    passPointerPointer();
+//    passPointerPointer();
+//    charArrArr();
+    charArrArr2();
 }
