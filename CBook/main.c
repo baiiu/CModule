@@ -15,6 +15,8 @@
 #include "day4_指针数组.h"
 #include "day5_二级指针.h"
 #include "day5_函数指针.h"
+#include "day5_函数jump.h"
+#include "day6_结构体指针.h"
 
 int main() {
 
@@ -33,7 +35,9 @@ int main() {
 //    day4_testArrPoint();
 //    day4_testPointerArr();
 //    day5_testPointerPointer();
-    day5_testFunPointer();
+//    day5_testFunPointer();
+//    day5_funcJump();
+    day6_testStructPointer();
 
     printf("\n");
     printf("===========end===========\n");

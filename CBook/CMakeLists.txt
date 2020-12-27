@@ -20,4 +20,4 @@ add_executable(
         day4_stackoverflow.c day4_stackoverflow.h
         day4_栈和堆差别.c day4_栈和堆差别.h
         day4_数组指针.c day4_数组指针.h
-        day5_二级指针.c day5_二级指针.h day4_指针数组.c day4_指针数组.h day5_函数指针.c day5_函数指针.h)
+        day5_二级指针.c day5_二级指针.h day4_指针数组.c day4_指针数组.h day5_函数指针.c day5_函数指针.h day5_函数jump.c day5_函数jump.h day6_结构体指针.c day6_结构体指针.h)
