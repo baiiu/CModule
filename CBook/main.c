@@ -17,6 +17,7 @@
 #include "day5_函数指针.h"
 #include "day5_函数jump.h"
 #include "day6_结构体指针.h"
+#include "day6_typedef使用.h"
 
 int main() {
 
@@ -37,7 +38,8 @@ int main() {
 //    day5_testPointerPointer();
 //    day5_testFunPointer();
 //    day5_funcJump();
-    day6_testStructPointer();
+//    day6_testStructPointer();
+    day6_testtypedef();
 
     printf("\n");
     printf("===========end===========\n");
