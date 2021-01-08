@@ -17,7 +17,7 @@ int main() {
 
 //    testHook();
 
-//    testStr();
+    testStr();
 
 //    testSocket();
 //    testSocket2();
@@ -30,13 +30,11 @@ int main() {
 
 //    testSimple();
 
-    printf("===========start===========\n");
+    printf("\n===========start===========\n\n");
 
-    printf("\n");
+//    testArr();
 
-    testArr();
-
-    printf("===========end===========\n");
+    printf("\n\n===========end===========\n");
 
     return 0;
 }

@@ -14,6 +14,14 @@ void testatoi() {
     printf("%s\n", str);
 }
 
+void printLen() {
+    char *str = "rtmp://mtplatform-tx-origin.meituan.com/mtplatform/ddddd123";
+    printf("str len: %d\n", strlen(str));
+    printf("str len: %d\n", sizeof(str));
+    printf("str len: %d\n", sizeof(*str));
+}
+
 void testStr() {
-    testatoi();
+//    testatoi();
+    printLen();
 }
