@@ -2,7 +2,7 @@
 // Created by baiiu on 2020/12/21.
 //
 
-#include "testArr.h"
+#include "testStack.h"
 
 
 void printArr(int *arr) {
@@ -18,7 +18,7 @@ void printArr2(int arr[]) {
     printArr(arr);
 }
 
-void testArr() {
+void testStack() {
     int arr[10] = {0};
 
     printArr2(arr);

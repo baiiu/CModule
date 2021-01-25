@@ -6,10 +6,12 @@
 #include "testStruct.h"
 #include "testDefine.h"
 #include "testSimple.h"
-#include "testArr.h"
+#include "testStack.h"
 
 
 int main() {
+
+    printf("\n===========start===========\n\n");
 
 //    testHello();
 
@@ -17,22 +19,23 @@ int main() {
 
 //    testHook();
 
-    testStr();
+//    testStr();
 
 //    testSocket();
 //    testSocket2();
 //    testSocket3();
 
 
-//    testStruct();
+    testStruct();
 
 //    testDefine();
 
 //    testSimple();
 
-    printf("\n===========start===========\n\n");
+//    testStack();
 
-//    testArr();
+
+
 
     printf("\n\n===========end===========\n");
 

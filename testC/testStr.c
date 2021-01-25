@@ -19,6 +19,17 @@ void printLen() {
     printf("str len: %d\n", strlen(str));
     printf("str len: %d\n", sizeof(str));
     printf("str len: %d\n", sizeof(*str));
+    printf("str: %s\n", str);
+
+    char *str1 = "123";
+    printf("str1: %s\n", str1);
+
+//    *str = *str1; // 因为在常量区啊，没法赋值
+    printf("===str: %s", str);
+
+    str = str1;
+    printf("======str: %s", str);
+
 }
 
 void testStr() {
