@@ -3,8 +3,8 @@
 //
 
 #include "day1.h"
-#include "day2.h"
-#include "day3.h"
+#include "day2_数据类型.h"
+#include "day3_数组传递.h"
 #include "day4_直接访问间接访问.h"
 #include "day4_指针传递和指针偏移.h"
 #include "day4_字符指针和字符数组.h"
@@ -31,7 +31,7 @@ int main() {
 //    day4_testPassPointer();
 //    day4_testPointerAndArr();
 //    day4_testNoPointer();
-//    day4_testStackOverFlow();
+    day4_testStackOverFlow();
 //    day4_testMallocAndStack();
 //    day4_testCharPointerArr();
 //    day4_testArrPoint();
@@ -41,7 +41,7 @@ int main() {
 //    day5_funcJump();
 //    day6_testStructPointer();
 //    day6_testtypedef();
-    day_testConstPointer();
+//    day_testConstPointer();
 
     printf("\n");
     printf("===========end===========\n");

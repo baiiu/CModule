@@ -10,8 +10,8 @@ add_executable(
         common.h
 
         day1.c day1.h
-        day2.c day2.h
-        day3.c day3.h
+        day2_数据类型.c day2_数据类型.h
+        day3_数组传递.c day3_数组传递.h
 
         day4_直接访问间接访问.c day4_直接访问间接访问.h
         day4_指针传递和指针偏移.c day4_指针传递和指针偏移.h

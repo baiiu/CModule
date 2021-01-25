@@ -2,7 +2,7 @@
 // Created by zhezhu on 2020/12/17.
 //
 
-#include "day2.h"
+#include "day2_数据类型.h"
 
 // 整型
 void testInt() {

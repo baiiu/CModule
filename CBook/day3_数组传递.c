@@ -3,7 +3,7 @@
 //
 
 #include <string.h>
-#include "day3.h"
+#include "day3_数组传递.h"
 
 void testArr() {
     int arr[10] = {1}; // 不赋值的默认为0
