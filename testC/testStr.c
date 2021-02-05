@@ -32,7 +32,34 @@ void printLen() {
 
 }
 
+void test0() {
+    char *str = (char *) malloc(10 * sizeof(char));
+    memset(str, 65, 10); // memset是设置的真实的 Unicode-8进去的
+
+    printf("str: %s\n", str); // AAAAAAAAAA
+    printf("sizeof *str: %lu\n", sizeof(*str)); // 1
+    printf("sizeof str: %lu\n", sizeof(str)); // 8
+    printf("strlen: %lu\n", strlen(str)); // 10
+
+    memcpy(str, "123", 2); // 只拷贝1、2
+    printf("str: %s\n", str); // 12AAAAAAAA
+    printf("strlen: %lu\n", strlen(str)); // 10
+
+
+    memcpy(str, "123", 4); // 拷贝1、2、3，第4位补0
+    printf("str: %s\n", str); // 123
+    printf("strlen: %lu\n", strlen(str)); // 3
+
+
+    strcpy(str, "123456"); // 会把\0也拷贝进去
+    printf("str: %s\n", str); // 123456
+    printf("strlen: %lu\n", strlen(str)); // 6
+
+
+}
+
 void testStr() {
 //    testatoi();
-    printLen();
+//    printLen();
+    test0();
 }

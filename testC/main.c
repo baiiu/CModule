@@ -19,14 +19,14 @@ int main() {
 
 //    testHook();
 
-//    testStr();
+    testStr();
 
 //    testSocket();
 //    testSocket2();
 //    testSocket3();
 
 
-    testStruct();
+//    testStruct();
 
 //    testDefine();
 
