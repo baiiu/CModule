@@ -31,7 +31,7 @@ int main() {
 //    day4_testPassPointer();
 //    day4_testPointerAndArr();
 //    day4_testNoPointer();
-    day4_testStackOverFlow();
+//    day4_testStackOverFlow();
 //    day4_testMallocAndStack();
 //    day4_testCharPointerArr();
 //    day4_testArrPoint();
@@ -39,7 +39,7 @@ int main() {
 //    day5_testPointerPointer();
 //    day5_testFunPointer();
 //    day5_funcJump();
-//    day6_testStructPointer();
+    day6_testStructPointer();
 //    day6_testtypedef();
 //    day_testConstPointer();
 

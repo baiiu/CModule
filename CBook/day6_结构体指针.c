@@ -14,8 +14,8 @@ void day6_testStructPointer() {
     struct student s = {1001, "HH", 'M'};
     struct student sarr[3] = {1001, "HH", 'M', 1010, "LL", 'M', 1100, "MM", 'M'};
 
-    struct student *p;
-    p = &s;
+    struct student *p = &s;
+//    p = &s;
     printf("%d, %s, %c\n", p->num, p->name, p->sex);
     printf("%d, %s, %c\n", (*p).num, (*p).name, (*p).sex);
     printf("%d, %s, %c\n", s.num, s.name, s.sex);

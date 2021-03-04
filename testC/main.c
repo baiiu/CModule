@@ -7,6 +7,7 @@
 #include "testDefine.h"
 #include "testSimple.h"
 #include "testStack.h"
+#include "testVector.h"
 
 
 int main() {
@@ -19,7 +20,7 @@ int main() {
 
 //    testHook();
 
-    testStr();
+//    testStr();
 
 //    testSocket();
 //    testSocket2();
@@ -34,7 +35,7 @@ int main() {
 
 //    testStack();
 
-
+    testVector();
 
 
     printf("\n\n===========end===========\n");

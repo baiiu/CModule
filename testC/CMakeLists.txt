@@ -17,4 +17,4 @@ add_executable(
         testDefine.c testDefine.h
         testSimple.c testSimple.h
 
-        testStack.c testStack.h)
+        testStack.c testStack.h testVector.cpp testVector.h)
