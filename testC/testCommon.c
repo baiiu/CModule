@@ -1,0 +1,15 @@
+//
+// Created by baiiu on 2021/3/10.
+//
+
+#include "testCommon.h"
+
+void testCommon() {
+
+    int a = 1;
+
+    int b = !!a;
+
+    printf("a = %d, b = %d", a, b);
+
+}

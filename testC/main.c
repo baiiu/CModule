@@ -8,6 +8,8 @@
 #include "testSimple.h"
 #include "testStack.h"
 #include "testVector.h"
+#include "testCPP.h"
+#include "testCommon.h"
 
 
 int main() {
@@ -35,8 +37,12 @@ int main() {
 
 //    testStack();
 
-    testVector();
+//    testVector();
 
+
+//    testCpp();
+
+    testCommon();
 
     printf("\n\n===========end===========\n");
 
