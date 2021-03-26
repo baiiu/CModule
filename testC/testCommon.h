@@ -7,6 +7,17 @@
 
 #include "common.h"
 
+struct ListNode {
+    int val;
+    struct ListNode *next;
+};
+
+typedef struct ListNode2 {
+    int val;
+    struct ListNode2 *next;
+} ListNode2;
+
+
 void testCommon();
 
 #endif //TESTC_TESTCOMMON_H
