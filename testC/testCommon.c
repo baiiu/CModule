@@ -6,8 +6,8 @@
 
 void testCommon() {
 
-    struct ListNode node;
     ListNode2 node2; // 使用了typedef
+
 
     int a = 1;
 

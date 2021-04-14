@@ -22,7 +22,7 @@ int main() {
 
 //    testHook();
 
-//    testStr();
+    testStr();
 
 //    testSocket();
 //    testSocket2();
@@ -42,7 +42,7 @@ int main() {
 
 //    testCpp();
 
-    testCommon();
+//    testCommon();
 
     printf("\n\n===========end===========\n");
 
