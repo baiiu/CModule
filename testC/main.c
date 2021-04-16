@@ -10,6 +10,7 @@
 #include "testVector.h"
 #include "testCPP.h"
 #include "testCommon.h"
+#include "testParseUrl.h"
 
 
 int main() {
@@ -22,7 +23,7 @@ int main() {
 
 //    testHook();
 
-    testStr();
+//    testStr();
 
 //    testSocket();
 //    testSocket2();
@@ -43,6 +44,8 @@ int main() {
 //    testCpp();
 
 //    testCommon();
+
+    parseUrl();
 
     printf("\n\n===========end===========\n");
 
