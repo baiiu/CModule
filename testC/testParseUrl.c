@@ -73,19 +73,27 @@ void test2() {
     printf("%s, %d, %lu", portStr, length, strlen(portStr));
 }
 
+void test3(AVal *aval) {
+//    char *url = "https://www.baidu.com:443?test=123";
+    char url[100];
+    "https://www.baidu.com:443?test=123";
+    strcpy(url, "https://www.baidu.com:443?test=123");
+
+    char *p = strstr(url, "://");
+    aval->av_val = p;
+    aval->av_len = strlen(p);
+}
+
 void parseUrl() {
 //    char *s = test();
 //    printf("s: %s\n", s);
 //    free(s);
 //    s = NULL;
 
-    test2();
+//    test2();
 
-//    int a = 13;
-//    printf("pa = %p, a = %d\n", &a, a);
-//    int b = a;
-//    printf("pb = %p, b = %d\n", &b, b);
-//    a = 31;
-//    printf("pa = %p, a = %d\n", &a, a);
-//    printf("pb = %p, b = %d\n", &b, b);
+    AVal aVal;
+    test3(&aVal);
+    printf("avl: %s, %d", aVal.av_val, aVal.av_len);
+
 }
