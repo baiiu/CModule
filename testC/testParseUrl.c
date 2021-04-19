@@ -6,13 +6,18 @@
 #include "common.h"
 #include <regex.h>
 
-void parseUrl() {
+static char *test() {
 
 //    char *temp = "123test456test";
 //    int result = atoi(temp);
 //    printf("%d", result);
 
     char *p = "wwwcom:1935?streamid=#!::h=wwwcom,r=live/test123456";
+    char *test = strchr(p, '-');
+    if (test == NULL) {
+        printf("test=======%s is NULL\n", test);
+    }
+    printf("test=======%s\n", test);
 
     // 解析port
     char *col = strchr(p, ':');
@@ -24,14 +29,63 @@ void parseUrl() {
         printf("port: %d\n", p2);
     }
 
+    char *end = p + strlen(p);
+
     char *host = strstr(p, "h=");
-    char *hostEnd = strchr(host, ',');
     host += 2;
+    char *hostEnd = strchr(host, ',');
+    if (!hostEnd) {
+        hostEnd = end;
+    }
     int hostLength = hostEnd - host;
     printf("host: %s, len: %d\n", host, hostLength);
 
     char *resource = strstr(p, "r=");
+    resource += 2;
     char *rEnd = strchr(resource, ',');
+    if (rEnd == NULL) {
+        rEnd = end;
+    }
     int resourceLength = rEnd - resource;
     printf("resource: %s, len: %d\n", resource, resourceLength);
+
+
+//    char hostStr[hostLength + resourceLength + 2];
+    char *hostStr = malloc((hostLength + resourceLength + 2) * sizeof(char));
+    strncpy(hostStr, host, hostLength);
+    printf("hostStr: %s\n", hostStr);
+
+
+    strcat(hostStr, "/");
+    printf("hostStr: %s\n", hostStr);
+
+    strncat(hostStr, resource, resourceLength);
+    hostStr[hostLength + resourceLength + 1] = '\0';
+    printf("hostStr: %s\n", hostStr);
+
+    return hostStr;
+}
+
+void test2() {
+    int port = 1935;
+    char portStr[6];
+    int length = sprintf(portStr, "%d", port);
+    printf("%s, %d, %lu", portStr, length, strlen(portStr));
+}
+
+void parseUrl() {
+//    char *s = test();
+//    printf("s: %s\n", s);
+//    free(s);
+//    s = NULL;
+
+    test2();
+
+//    int a = 13;
+//    printf("pa = %p, a = %d\n", &a, a);
+//    int b = a;
+//    printf("pb = %p, b = %d\n", &b, b);
+//    a = 31;
+//    printf("pa = %p, a = %d\n", &a, a);
+//    printf("pb = %p, b = %d\n", &b, b);
 }
