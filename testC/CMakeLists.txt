@@ -17,4 +17,9 @@ add_executable(
         testDefine.c testDefine.h
         testSimple.c testSimple.h
 
-        testStack.c testStack.h testVector.cpp testVector.h testCPP.cpp testCPP.h testCommon.c testCommon.h testParseUrl.c testParseUrl.h)
+        testStack.c testStack.h
+        testVector.cpp testVector.h
+        testCPP.cpp testCPP.h
+        testCommon.c testCommon.h
+        testParseUrl.c testParseUrl.h
+        testVoid*.c testVoid*.h)

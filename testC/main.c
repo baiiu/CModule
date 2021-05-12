@@ -11,6 +11,7 @@
 #include "testCPP.h"
 #include "testCommon.h"
 #include "testParseUrl.h"
+#include "testVoid*.h"
 
 
 int main() {
@@ -45,7 +46,9 @@ int main() {
 
 //    testCommon();
 
-    parseUrl();
+//    parseUrl();
+
+    testVoid();
 
     printf("\n\n===========end===========\n");
 
