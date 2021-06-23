@@ -22,4 +22,6 @@ add_executable(
         testCPP.cpp testCPP.h
         testCommon.c testCommon.h
         testParseUrl.c testParseUrl.h
-        testVoid*.c testVoid*.h)
+        testVoid*.c testVoid*.h
+        testDNS.c testDNS.h
+)

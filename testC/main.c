@@ -12,6 +12,7 @@
 #include "testCommon.h"
 #include "testParseUrl.h"
 #include "testVoid*.h"
+#include "testDNS.h"
 
 
 int main() {
@@ -48,7 +49,10 @@ int main() {
 
 //    parseUrl();
 
-    testVoid();
+//    testVoid();
+
+    testDNS();
+
 
     printf("\n\n===========end===========\n");
 
