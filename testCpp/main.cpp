@@ -1,10 +1,20 @@
 #include <iostream>
-#include "testClass.h"
+#include <cmath>
+
+#include "call_once.h"
+#include "testConst.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+//    testCallOnce();
 
-    testClass();
+
+//    int64_t i = -1;
+//    cout << "i:" << i << endl;
+//    printf("i: %lld", i);
+
+//    cout << llrint(1 / 1) * -1 << endl;
+
+    testConst();
 
     return 0;
 }

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.17)
-project(testCpp)
+project(testCPP)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(testCpp main.cpp testClass.cpp testClass.h)
+add_executable(testCPP main.cpp call_once.cpp call_once.h common.h testConst.cpp testConst.h)

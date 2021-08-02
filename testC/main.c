@@ -13,11 +13,14 @@
 #include "testParseUrl.h"
 #include "testVoid*.h"
 #include "testDNS.h"
+#include "testPointer.h"
 
 
 int main() {
 
     printf("\n===========start===========\n\n");
+
+    testDoublePointer();
 
 //    testHello();
 
@@ -51,7 +54,8 @@ int main() {
 
 //    testVoid();
 
-    testDNS();
+//    testDNS();
+
 
 
     printf("\n\n===========end===========\n");
