@@ -3,10 +3,12 @@
 
 #include "call_once.h"
 #include "testConst.h"
+#include "testStatic.h"
+
+
 
 int main() {
 //    testCallOnce();
-
 
 //    int64_t i = -1;
 //    cout << "i:" << i << endl;
@@ -14,7 +16,8 @@ int main() {
 
 //    cout << llrint(1 / 1) * -1 << endl;
 
-    testConst();
+//    testConst();
+    testStatic();
 
     return 0;
 }
