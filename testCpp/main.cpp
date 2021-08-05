@@ -4,7 +4,7 @@
 #include "call_once.h"
 #include "testConst.h"
 #include "testStatic.h"
-
+#include "teststring.h"
 
 
 int main() {
@@ -17,7 +17,8 @@ int main() {
 //    cout << llrint(1 / 1) * -1 << endl;
 
 //    testConst();
-    testStatic();
+//    testStatic();
+    teststring();
 
     return 0;
 }

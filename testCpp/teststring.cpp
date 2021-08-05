@@ -12,8 +12,7 @@ void testString2(const string &s) {
 
 }
 
-void teststring() {
-
+void testParams() {
 //    testString1("11");
     testString2("11");
 
@@ -27,5 +26,18 @@ void teststring() {
     s = "11";
     testString1(s);
     testString2(s);
+}
 
+void teststring() {
+
+    string s1 = "123";
+    string s2 = "123";
+    auto *s3 = new string("123");
+
+    // 是
+    printf("%p, %p， %p\n", &s1, &s2, s3); // 不同
+    printf("是否相等: %d\n", (s1 == s2)); // true
+    printf("是否相等: %d\n", (s1 == *s3));// true
+
+    delete s3;
 }

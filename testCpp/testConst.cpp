@@ -2,9 +2,10 @@
 // Created by baiiu on 2021/8/2.
 //
 
+#include <cstdio>
 #include "testConst.h"
 
-void testReference(){
+void testReference() {
 
     int a = 1024;
     const int &ra = a;
@@ -14,9 +15,12 @@ void testReference(){
 
     double c = 3.14;
     const int &rc = c;
+
+    TEMP aa = &c;
+    printf("aa: %f", *aa);
 }
 
-void testPointer(){
+void testPointer() {
     const double PI = 3.14;
     const double *p = &PI;
 }
