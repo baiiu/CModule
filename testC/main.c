@@ -20,7 +20,7 @@ int main() {
 
     printf("\n===========start===========\n\n");
 
-    testDoublePointer();
+//    testDoublePointer();
 
 //    testHello();
 
@@ -56,7 +56,7 @@ int main() {
 
 //    testDNS();
 
-
+    testStr();
 
     printf("\n\n===========end===========\n");
 

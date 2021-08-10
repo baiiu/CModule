@@ -6,9 +6,10 @@
 
 class Solution {
 private:
-    static int ctrGlobal; // 调用结束后，这个值依然有效
+    static int sInt; // 必须在类外初始化
+    int ctrGlobal; // 调用结束后，这个值依然有效
 
-    static int count_calls() {
+    int count_calls() {
         static int ctr; // 调用结束后，这个值依然有效
         cout << ctr << endl;
         ++ctrGlobal;
@@ -26,7 +27,7 @@ public:
     }
 };
 
-int Solution::ctrGlobal = 0;
+int Solution::sInt = 0;
 
 void testStatic() {
     Solution().threeSum();

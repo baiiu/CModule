@@ -134,10 +134,17 @@ void testmemcopy() {
 
 }
 
+void testcmp() {
+    char *str = "rtmpe";
+    printf("rtmpe: %d\n",strcmp(str, "rtmpe"));
+    printf("rtmpte: %d\n",strcmp(str, "rtmpte"));
+}
+
 void testStr() {
 //    testatoi();
 //    printLen();
 //    test0();
 //    testPointer();
-    testmemcopy();
+//    testmemcopy();
+    testcmp();
 }

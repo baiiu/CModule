@@ -28,8 +28,8 @@ void testParams() {
     testString2(s);
 }
 
-void teststring() {
 
+void testEqual() {
     string s1 = "123";
     string s2 = "123";
     auto *s3 = new string("123");
@@ -40,4 +40,14 @@ void teststring() {
     printf("是否相等: %d\n", (s1 == *s3));// true
 
     delete s3;
+}
+
+const string &testLocal() {
+    return "123";
+}
+
+void teststring() {
+//    testParams();
+//    testEqual();
+    testLocal();
 }
