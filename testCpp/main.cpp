@@ -5,12 +5,15 @@
 #include "testConst.h"
 #include "testStatic.h"
 #include "teststring.h"
+#include "testPerson.h"
 
 
 int main() {
-//    testCallOnce();
 
-    testStatic();
+//    testCallOnce();
+//    testStatic();
+
+    testPerson();
 
     return 0;
 }

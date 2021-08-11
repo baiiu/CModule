@@ -27,6 +27,6 @@ void testPointer() {
 
 
 void testConst() {
-    testReference();
-    testPointer();
+//    testReference();
+//    testPointer();
 }
