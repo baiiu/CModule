@@ -6,6 +6,7 @@
 #include "testStatic.h"
 #include "teststring.h"
 #include "testPerson.h"
+#include "testDynamic.h"
 
 
 int main() {
@@ -13,7 +14,9 @@ int main() {
 //    testCallOnce();
 //    testStatic();
 
-    testPerson();
+//    testPerson();
+
+    testDynamic();
 
     return 0;
 }
