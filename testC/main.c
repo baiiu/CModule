@@ -54,9 +54,9 @@ int main() {
 
 //    testVoid();
 
-//    testDNS();
+    testDNS();
 
-    testStr();
+//    testStr();
 
     printf("\n\n===========end===========\n");
 

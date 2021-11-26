@@ -3,3 +3,8 @@
 //
 
 #include "testThread.h"
+#include "thread"
+
+void testThread() {
+//    thread
+}

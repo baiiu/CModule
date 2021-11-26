@@ -104,8 +104,24 @@ void testWrongDNS() {
     printf("\ndnsCost: %lld\n", dnsCost);
 }
 
+void testFreeDNS() {
+    struct addrinfo hints = {0}, *res;
+    hints.ai_family = AF_INET; // AF_INET表示ipv4，只发type A请求
+
+    int ret = getaddrinfo("1.1.com", NULL, &hints, &res);
+
+    printf("%s: error: %d, msg: %s, res: %p", __func__, ret, gai_strerror(ret), res);
+
+    freeaddrinfo(res);
+
+    const char *name = NULL;
+    if (!name) {
+        printf("\n123");
+    }
+}
 
 void testDNS() {
 //    parseDNS();
-    testWrongDNS();
+//    testWrongDNS();
+    testFreeDNS();
 }

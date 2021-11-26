@@ -7,6 +7,8 @@
 #include "teststring.h"
 #include "testPerson.h"
 #include "testDynamic.h"
+#include "testConstructor.h"
+#include "testEnum.h"
 
 
 int main() {
@@ -16,7 +18,11 @@ int main() {
 
 //    testPerson();
 
-    testDynamic();
+    testConstructor();
+
+//    testDynamic();
+
+//    testEnum();
 
     return 0;
 }
