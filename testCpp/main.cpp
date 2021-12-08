@@ -9,7 +9,7 @@
 #include "testDynamic.h"
 #include "testConstructor.h"
 #include "testEnum.h"
-
+#include "sps/testsps.h"
 
 int main() {
 
@@ -18,11 +18,14 @@ int main() {
 
 //    testPerson();
 
-    testConstructor();
+//    testConstructor();
 
 //    testDynamic();
 
 //    testEnum();
+
+//    teststring();
+    testSps();
 
     return 0;
 }

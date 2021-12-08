@@ -46,8 +46,35 @@ const string &testLocal() {
     return "123";
 }
 
+void testintarr() {
+    int len = 8;
+    uint8_t arr[] = {0, 1, 2, 3, 4, 5, 6, 7};
+    uint8_t *data = arr;
+
+    for (int i = 0; i < len; ++i) {
+        printf("%d, ", data[i]);
+    }
+
+    printf("\n");
+
+    char temp[len + 1];
+    for (int i = 0; i < len; ++i) {
+        temp[i] = '0' + data[i];
+    }
+    temp[len] = '\0';
+
+    for (int i = 0; i < len + 1; ++i) {
+        printf("%d, ", temp[i]);
+    }
+    printf("\n");
+
+    printf("%s", temp);
+
+}
+
 void teststring() {
 //    testParams();
 //    testEqual();
-    testLocal();
+//    testLocal();
+    testintarr();
 }

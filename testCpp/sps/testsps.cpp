@@ -4,19 +4,6 @@
 
 #include "testsps.h"
 
-void skipBytes(Spspps *spspps, int bytes) {
-    spspps->position += bytes;
-}
-
-unsigned char readByte(Spspps *spspps) {
-    return spspps->data[spspps->position++];
-}
-
-unsigned short readShort(Spspps *spspps) {
-    return spspps->data[spspps->position++] << 8
-           | spspps->data[spspps->position++];
-}
-
 void testSps() {
     /*
      * 0x01+sps[1]+sps[2]+sps[3]+0xFF+0xE1+sps size+sps+01+pps size+pps
@@ -35,44 +22,11 @@ void testSps() {
     avCodecContext.extradata = data;
     avCodecContext.extradata_size = sizeof(data);
 
-    /*
-     * 解析spspps
-     */
     Spspps spspps;
     spspps.spspps_size = avCodecContext.extradata_size;
     memcpy(spspps.data, avCodecContext.extradata, spspps.spspps_size);
 
-    skipBytes(&spspps, 4);
-    unsigned char byte = readByte(&spspps);
+    parseSpspps(&spspps);
 
-    int nalUnitLengthFieldLength = (byte & 0x3) + 1;
-    printf("byte: %x, nalUnitLengthFieldLength: %d\n", byte, nalUnitLengthFieldLength);
-
-    if (nalUnitLengthFieldLength == 3) {
-        return;
-    }
-
-    byte = readByte(&spspps);
-    int numSequenceParameterSets = byte & 0x1F;
-    printf("byte: %x, numSequenceParameterSets: %d\n", byte, numSequenceParameterSets);
-    if (numSequenceParameterSets > 1) {
-        // 有两个sps/pps? 让ffmpeg本身处理吧
-        return;
-    }
-
-    unsigned short spsLength = readShort(&spspps);
-    printf("byte: %x, %d\n", spsLength, spsLength);
-
-    /*
-     * 找到了sps，开始解析sps
-     */
-    Sps sps;
-    sps.sps_size = spsLength;
-    memcpy(sps.data, &spspps.data[spspps.position], spsLength);
-    for (int i = 0; i < spsLength; ++i) {
-        printf("%0x, ", sps.data[i]);
-    }
-
-    
 
 }
