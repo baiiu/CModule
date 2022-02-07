@@ -5,7 +5,7 @@
 #include <cstdio>
 #include "testConst.h"
 
-void testReference() {
+void testConstReference() {
 
     int a = 1024;
     const int &ra = a;
@@ -25,8 +25,25 @@ void testPointer() {
     const double *p = &PI;
 }
 
+class Person {
+public:
+    string name;
+    mutable int age;
+};
+
+void testPerson(const Person *person) {
+    person->age = 1; // 可以修改
+//    person->name = "aa"; // 不可修改
+}
+
+void testPerson(const Person &person) {
+    person.age = 1; // 可以修改
+//    person.name = "aa"; // 不可修改
+}
 
 void testConst() {
-//    testReference();
+//    testConstReference();
 //    testPointer();
+    Person p = {"张三", 10};
+    testPerson(p);
 }

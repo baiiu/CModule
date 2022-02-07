@@ -5,4 +5,8 @@
 #ifndef TESTCPP_TESTQUEUE_H
 #define TESTCPP_TESTQUEUE_H
 
+#include "common.h"
+
+void testQueue();
+
 #endif //TESTCPP_TESTQUEUE_H

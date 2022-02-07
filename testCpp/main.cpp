@@ -10,6 +10,8 @@
 #include "testConstructor.h"
 #include "testEnum.h"
 #include "sps/testsps.h"
+#include "testQueue.h"
+#include "testReference.h"
 
 int main() {
 
@@ -25,7 +27,10 @@ int main() {
 //    testEnum();
 
 //    teststring();
-    testSps();
+//    testSps();
+
+//    testQueue();
+    testReference();
 
     return 0;
 }

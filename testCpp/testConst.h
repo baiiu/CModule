@@ -5,6 +5,8 @@
 #ifndef TESTCPP_TESTCONST_H
 #define TESTCPP_TESTCONST_H
 
+#include "common.h"
+
 typedef int SOCKET;
 typedef double *TEMP;
 

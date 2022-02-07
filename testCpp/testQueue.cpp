@@ -3,3 +3,20 @@
 //
 
 #include "testQueue.h"
+
+
+void test1(string& beginWord){
+    queue<string> queue;
+    vector<string> visited;
+
+    queue.push(beginWord);
+    visited.emplace_back(beginWord);
+
+
+
+}
+
+
+void testQueue() {
+
+}
