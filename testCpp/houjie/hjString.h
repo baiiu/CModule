@@ -2,8 +2,8 @@
 // Created by baiiu on 2022/2/13.
 //
 
-#ifndef TESTCPP_TESTSTRING_H
-#define TESTCPP_TESTSTRING_H
+#ifndef TESTCPP_HJSTRING_H
+#define TESTCPP_HJSTRING_H
 
 #include <cstring>
 #include <iostream>
@@ -76,4 +76,4 @@ inline String &String::operator=(const String &str) {
 
 void testString();
 
-#endif //TESTCPP_TESTSTRING_H
+#endif //TESTCPP_HJSTRING_H

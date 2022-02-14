@@ -12,8 +12,10 @@
 //#include "sps/testsps.h"
 //#include "testQueue.h"
 //#include "testReference.h"
-#include "houjie/testOperator.h"
-#include "houjie/testString.h"
+//#include "houjie/hjOperator.h"
+//#include "houjie/hjString.h"
+//#include "houjie/hjStaic.h"
+#include "houjie/hjTemplate.h"
 
 int main() {
 
@@ -36,7 +38,11 @@ int main() {
 
 //    testOperator();
 
-    testString();
+//    testString();
+
+//    hjStatic();
+
+    testTemplate();
 
     return 0;
 }
