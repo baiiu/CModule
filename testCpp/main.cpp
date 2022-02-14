@@ -12,7 +12,8 @@
 //#include "sps/testsps.h"
 //#include "testQueue.h"
 //#include "testReference.h"
-#include "testOperator.h"
+#include "houjie/testOperator.h"
+#include "houjie/testString.h"
 
 int main() {
 
@@ -33,7 +34,9 @@ int main() {
 //    testQueue();
 //    testReference();
 
-    testOperator();
+//    testOperator();
+
+    testString();
 
     return 0;
 }
