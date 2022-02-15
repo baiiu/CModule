@@ -5,4 +5,6 @@
 #ifndef TESTCPP_HJVIRTUAL_H
 #define TESTCPP_HJVIRTUAL_H
 
+void testVirtual();
+
 #endif //TESTCPP_HJVIRTUAL_H

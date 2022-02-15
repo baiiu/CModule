@@ -15,7 +15,8 @@
 //#include "houjie/hjOperator.h"
 //#include "houjie/hjString.h"
 //#include "houjie/hjStaic.h"
-#include "houjie/hjTemplate.h"
+//#include "houjie/hjTemplate.h"
+#include "houjie/hjVirtual.h"
 
 int main() {
 
@@ -42,7 +43,9 @@ int main() {
 
 //    hjStatic();
 
-    testTemplate();
+//    testTemplate();
+
+    testVirtual();
 
     return 0;
 }
