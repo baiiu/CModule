@@ -2,7 +2,7 @@
 // Created by baiiu on 2022/2/24.
 //
 
-#include "RAII.h"
+#include "multiTai.h"
 
 enum class shape_type {
     type_circle,
@@ -68,7 +68,7 @@ shape *create_shape(shape_type type) {
 }
 
 
-void testRAII() {
+void testMultiTai() {
     shape *p = create_shape(shape_type::type_circle);
     p->print();
     delete p;

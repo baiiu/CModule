@@ -16,7 +16,8 @@
 //#include "houjie/hjString.h"
 //#include "houjie/hjStaic.h"
 //#include "houjie/hjTemplate.h"
-#include "houjie/hjVirtual.h"
+//#include "houjie/hjVirtual.h"
+#include "houjie/multiTai.h"
 
 int main() {
 
@@ -45,7 +46,9 @@ int main() {
 
 //    testTemplate();
 
-    testVirtual();
+//    testVirtual();
+
+    testMultiTai();
 
     return 0;
 }

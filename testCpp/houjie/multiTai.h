@@ -2,11 +2,11 @@
 // Created by baiiu on 2022/2/24.
 //
 
-#ifndef TESTCPP_RAII_H
-#define TESTCPP_RAII_H
+#ifndef TESTCPP_MULTITAI_H
+#define TESTCPP_MULTITAI_H
 
 #include "../common.h"
 
-void testRAII();
+void testMultiTai();
 
-#endif //TESTCPP_RAII_H
+#endif //TESTCPP_MULTITAI_H
