@@ -13,11 +13,11 @@
 //#include "testQueue.h"
 //#include "testReference.h"
 //#include "houjie/hjOperator.h"
-//#include "houjie/hjString.h"
+#include "houjie/hjString.h"
 //#include "houjie/hjStaic.h"
 //#include "houjie/hjTemplate.h"
 //#include "houjie/hjVirtual.h"
-#include "houjie/multiTai.h"
+//#include "houjie/multiTai.h"
 
 int main() {
 
@@ -40,7 +40,7 @@ int main() {
 
 //    testOperator();
 
-//    testString();
+    testString();
 
 //    hjStatic();
 
@@ -48,7 +48,7 @@ int main() {
 
 //    testVirtual();
 
-    testMultiTai();
+//    testMultiTai();
 
     return 0;
 }
