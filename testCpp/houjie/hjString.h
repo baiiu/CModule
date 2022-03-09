@@ -104,7 +104,7 @@ inline String &String::operator=(String &&str) noexcept {
     }
 
     if (m_data) {
-        delete m_data;
+        delete[] m_data;
     }
 
     m_data = str.m_data;

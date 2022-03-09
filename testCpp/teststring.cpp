@@ -78,3 +78,81 @@ void teststring() {
 //    testLocal();
     testintarr();
 }
+
+
+class MyString {
+private:
+    char *mData;
+public:
+    MyString() {
+        mData = new char[1];
+        *mData = '\0';
+    }
+
+    // 构造函数
+    MyString(const char *str) {
+        if (str) {
+            int len = strlen(str);
+            mData = new char[len + 1];
+            memcpy(mData, str, len);
+            mData[len] = '\0';
+        } else {
+            mData = new char[1];
+            *mData = '\0';
+        }
+    }
+
+
+    // 析构函数
+    ~MyString() {
+        if (mData) {
+            delete[] mData;
+            mData = nullptr;
+        }
+    }
+
+
+    // 拷贝构造
+    MyString(const MyString &other) {
+        int len = strlen(other.mData);
+
+        mData = new char[len + 1];
+        strcpy(mData, other.mData);
+    }
+
+    // 拷贝赋值
+    MyString &operator=(const MyString &other) {
+        if (this == &other) {
+            return *this;
+        }
+
+        delete[] mData;
+
+        int len = strlen(other.mData);
+        mData = new char[len + 1];
+        strcpy(mData, other.mData);
+
+        return *this;
+    }
+
+    // 移动构造
+    MyString(MyString &&other) noexcept {
+        mData = other.mData;
+        other.mData = nullptr;
+    }
+
+    // 移动赋值
+    MyString &operator=(MyString &&other) noexcept {
+        if (this == &other) {
+            return *this;
+        }
+
+        delete[] mData;
+
+        mData = other.mData;
+        other.mData = nullptr;
+        return *this;
+    }
+
+
+};

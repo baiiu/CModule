@@ -14,6 +14,7 @@
 //#include "testReference.h"
 //#include "houjie/hjOperator.h"
 #include "houjie/hjString.h"
+#include "testSmartPtr.h"
 //#include "houjie/hjStaic.h"
 //#include "houjie/hjTemplate.h"
 //#include "houjie/hjVirtual.h"
@@ -40,7 +41,7 @@ int main() {
 
 //    testOperator();
 
-    testString();
+//    testString();
 
 //    hjStatic();
 
@@ -49,6 +50,8 @@ int main() {
 //    testVirtual();
 
 //    testMultiTai();
+
+    testSmartPtr();
 
     return 0;
 }
