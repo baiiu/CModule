@@ -15,6 +15,7 @@
 //#include "houjie/hjOperator.h"
 #include "houjie/hjString.h"
 #include "testSmartPtr.h"
+#include "singleton/testSingleton.h"
 //#include "houjie/hjStaic.h"
 //#include "houjie/hjTemplate.h"
 //#include "houjie/hjVirtual.h"
@@ -51,7 +52,10 @@ int main() {
 
 //    testMultiTai();
 
-    testSmartPtr();
+//    testSmartPtr();
+
+//    testSimpleSingleton();
+    testSingleton();
 
     return 0;
 }
