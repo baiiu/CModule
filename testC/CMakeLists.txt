@@ -24,4 +24,6 @@ add_executable(
         testParseUrl.c testParseUrl.h
         testVoid*.c testVoid*.h
         testDNS.c testDNS.h
-        testPointer.c testPointer.h)
+        testPointer.c testPointer.h
+        testJump.c testJump.h
+)

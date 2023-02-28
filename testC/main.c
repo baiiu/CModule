@@ -14,7 +14,7 @@
 #include "testVoid*.h"
 #include "testDNS.h"
 #include "testPointer.h"
-
+#include "testJump.h"
 
 int main() {
 
@@ -54,9 +54,11 @@ int main() {
 
 //    testVoid();
 
-    testDNS();
+//    testDNS();
 
 //    testStr();
+
+    testJump();
 
     printf("\n\n===========end===========\n");
 
