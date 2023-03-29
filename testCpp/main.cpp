@@ -16,6 +16,8 @@
 #include "houjie/hjString.h"
 #include "testSmartPtr.h"
 #include "singleton/testSingleton.h"
+#include "testSize.h"
+#include "testVirtualPtr.h"
 //#include "houjie/hjStaic.h"
 //#include "houjie/hjTemplate.h"
 //#include "houjie/hjVirtual.h"
@@ -55,7 +57,11 @@ int main() {
 //    testSmartPtr();
 
 //    testSimpleSingleton();
-    testSingleton();
+//    testSingleton();
+
+//    testSize();
+
+    testVirtualPtr();
 
     return 0;
 }

@@ -28,4 +28,4 @@ add_executable(testCPP
         testSmartPtr.cpp testSmartPtr.h
 #        singleton/testSingletonWrong.cpp
         singleton/testSingleton.cpp
-        singleton/testSingleton.h)
+        singleton/testSingleton.h testSize.cpp testSize.h testVirtualPtr.cpp testVirtualPtr.h)
