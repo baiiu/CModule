@@ -20,6 +20,14 @@ void test2() {
     printf("%s,%s\n", arrB[0], arrB[1]);
 }
 
+void test3() {
+    int a = 1, b = 2, c = 3;
+    int *arr[] = {&a, &b, &c};
+    for (int i = 0; i < 3; i++) {
+        printf("%d", *arr[i]);
+    }
+}
+
 // 指针数组
 void day4_testPointerArr() {
     test1();
