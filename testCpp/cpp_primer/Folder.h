@@ -20,10 +20,16 @@ public:
     explicit Folder(const std::string &str = "") : folderName(str) {}
 
     // 拷贝构造
-    Folder(const Folder&);
+    Folder(const Folder &);
+
+    // 移动构造
+    Folder(Folder &&);
 
     // 拷贝赋值
-    Folder& operator=(const Folder&);
+    Folder &operator=(const Folder &);
+    // 移动赋值
+    Folder &operator=(Folder &&);
+
 
     void addMessage(Message &);
 

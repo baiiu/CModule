@@ -21,8 +21,14 @@ public:
     // 拷贝构造函数
     Message(const Message &);
 
+    // 移动构造
+    Message(Message &&);
+
     // 拷贝赋值
     Message &operator=(const Message &);
+
+    // 移动赋值
+    Message &operator=(Message &&);
 
     ~Message();
 
@@ -38,6 +44,8 @@ private:
     void add_to_folders(const Message &); //将本Message添加到参数m指定的Folders
 
     void remove_from_folders(); // 从folders中移除本Message
+
+    void move_folders(Message*);
 };
 
 #endif //TESTCPP_MESSAGE_H

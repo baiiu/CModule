@@ -26,9 +26,23 @@ void Message::remove_from_folders() {
     }
 }
 
+void Message::move_folders(Message *m) {
+    folders = std::move(m->folders); // set的移动赋值，而非拷贝
+    for (auto &f: folders) {
+        f->removeMessage(m);
+        f->addMessage(this);
+    }
+    m->folders.clear();
+}
+
 // 拷贝构造
 Message::Message(const Message &m) : contents(m.contents), folders(m.folders) {
     add_to_folders(m); // 将本消息添加到m指向的folders中
+}
+
+// 移动构造
+Message::Message(Message &&m) : contents(m.contents), folders(m.folders) {
+    move_folders(&m);
 }
 
 // 拷贝赋值
@@ -38,6 +52,17 @@ Message &Message::operator=(const Message &m) {
     folders = m.folders;
     add_to_folders(m); // 将本消息添加到m指向的folders中
     return *this;
+}
+
+// 移动赋值
+Message &Message::operator=(Message &&m) {
+    if (this == &m) {
+        return *this;
+    }
+
+    remove_from_folders();
+    contents = std::move(m.contents); // string的移动赋值
+    move_folders(&m);
 }
 
 Message::~Message() {
