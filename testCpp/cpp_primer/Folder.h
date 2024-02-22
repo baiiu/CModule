@@ -8,12 +8,12 @@
 #include <set>
 #include <string>
 #include "Folder.h"
-#include "Message.h"
+
+class Message;
 
 using namespace std;
 
 class Folder {
-    friend class Message;
 
 public:
     // 显示构造函数
@@ -27,6 +27,7 @@ public:
 
     // 拷贝赋值
     Folder &operator=(const Folder &);
+
     // 移动赋值
     Folder &operator=(Folder &&);
 

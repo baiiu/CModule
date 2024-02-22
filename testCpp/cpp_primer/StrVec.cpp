@@ -4,6 +4,8 @@
 
 #include "StrVec.h"
 
+std::allocator<std::string> StrVec::alloc;
+
 StrVec::StrVec(const StrVec &s) {
     // copy s有效空间到本StrVec
     auto data = alloc_n_copy(s.begin(), s.end());

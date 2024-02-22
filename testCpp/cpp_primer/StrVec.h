@@ -4,9 +4,10 @@
 
 #ifndef TESTCPP_STRVEC_H
 #define TESTCPP_STRVEC_H
-using namespace std;
 
-#include "string"
+#include <string>
+
+using namespace std;
 
 class StrVec {
 public:

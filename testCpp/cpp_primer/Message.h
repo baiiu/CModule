@@ -45,7 +45,7 @@ private:
 
     void remove_from_folders(); // 从folders中移除本Message
 
-    void move_folders(Message*);
+    void move_folders(Message *);
 };
 
 #endif //TESTCPP_MESSAGE_H

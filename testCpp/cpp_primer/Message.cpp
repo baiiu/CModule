@@ -6,31 +6,31 @@
 
 void Message::save(Folder &folder) {
     folders.insert(&folder);
-    folder.addMessage(this);
+    folder.addMessage(*this);
 }
 
 void Message::remove(Folder &folder) {
     folders.erase(&folder);
-    folder.removeMessage(this);
+    folder.removeMessage(*this);
 }
 
 void Message::add_to_folders(const Message &message) {
     for (auto &folder: message.folders) {
-        folder->addMessage(this);
+        folder->addMessage(*this);
     }
 }
 
 void Message::remove_from_folders() {
     for (auto &folder: folders) {
-        folder->removeMessage(this);
+        folder->removeMessage(*this);
     }
 }
 
 void Message::move_folders(Message *m) {
     folders = std::move(m->folders); // set的移动赋值，而非拷贝
     for (auto &f: folders) {
-        f->removeMessage(m);
-        f->addMessage(this);
+        f->removeMessage(*m);
+        f->addMessage(*this);
     }
     m->folders.clear();
 }

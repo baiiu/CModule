@@ -56,7 +56,7 @@ int main() {
 
 //    testMultiTai();
 
-//    testSmartPtr();
+    testSmartPtr();
 
 //    testSimpleSingleton();
 //    testSingleton();
@@ -66,7 +66,7 @@ int main() {
 //    testVirtualPtr();
 
 //    testSem();
-    testTime();
+//    testTime();
 
     return 0;
 }
