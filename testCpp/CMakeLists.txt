@@ -33,4 +33,4 @@ add_executable(testCPP
         singleton/testSingleton.cpp
         singleton/testSingleton.h testSize.cpp testSize.h testVirtualPtr.cpp testVirtualPtr.h testSem.cpp testSem.h testTime.cpp testTime.h
         cpp_primer/Message.cpp cpp_primer/Message.h cpp_primer/Folder.cpp cpp_primer/Folder.h
-        cpp_primer/StrVec.cpp cpp_primer/StrVec.h)
+        cpp_primer/StrVec.cpp cpp_primer/StrVec.h cpp_primer/smartPtr_deleter.cpp cpp_primer/smartPtr_deleter.h)

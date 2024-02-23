@@ -11,7 +11,7 @@ struct A {
     int a = 5;
 
     A() {
-        cout << "A 构造" << endl;
+//        cout << "A 构造" << endl;
     }
 };
 
