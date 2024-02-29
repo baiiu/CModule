@@ -25,6 +25,7 @@
 //#include "houjie/hjVirtual.h"
 //#include "houjie/multiTai.h"
 #include "cpp_primer/smartPtr_deleter.h"
+#include "smart_ptr/multiTai.h"
 
 int main() {
 
@@ -57,8 +58,9 @@ int main() {
 
 //    testMultiTai();
 
-    testSmartPtr();
+//    testSmartPtr();
 //    testDeleter();
+    testMultiTai();
 
 //    testSimpleSingleton();
 //    testSingleton();
