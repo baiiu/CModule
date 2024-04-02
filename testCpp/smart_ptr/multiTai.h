@@ -8,7 +8,6 @@
 #include "../common.h"
 #include "smart_shared_ptr.h"
 #include "smart_unique_ptr.h"
-#include "smart_ptr.h"
 
 void testMultiTai();
 

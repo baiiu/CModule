@@ -112,15 +112,20 @@ void testSmartPtr() {
 
     {
         auto p1 = make_shared<MyString>("p1"); // 单参构造函数，给该智能指针赋值
-        cout << p1 << ", " << *p1 << ", " << p1->empty() << ", " << p1.use_count() << endl; // 0x6000012544b8, p1, 0, 1
+        cout << p1 << ", " << *p1 << ", " << p1.use_count() << endl; // 0x6000012544b8, p1, 1
 
         shared_ptr<MyString> p2 = p1; // 当进行拷贝赋值操作时，每个shared_ptr都会记录有多少个其他shared_ptr指向相同的对象：
-        cout << p2 << ", " << *p2 << ", " << p2->empty() << ", " << p1.use_count() << endl; // 0x6000012544b8, p1, 0, 2
+        cout << p2 << ", " << *p2 << ", " << p1.use_count() << endl; // 0x6000012544b8, p1, 2
 
         auto p3 = make_shared<MyString>("p3");
-        p3 = p1; // p3~析构函数
-        cout << p3 << ", " << *p3 << ", " << p3->empty() << ", " << p1.use_count() << ", " << p3.use_count()
-             << endl; // 0x6000012544b8, p1, 0, 3, 3
+        p3 = p1; // p3~析构函数，拷贝赋值会将原先的share_ptr持有的对象释放
+        cout << p3 << ", " << *p3 << ", "
+             << p1.use_count() << ", " << p3.use_count() << endl; // 0x6000012544b8, p1, 3, 3
+
+        shared_ptr<MyString> p4(p3); // 当进行拷贝构造操作时，每个shared_ptr都会记录有多少个其他shared_ptr指向相同的对象：
+        cout << p4 << ", " << *p4 << ", "
+             << p1.use_count() << ", " << p3.use_count() << ", " << p4.use_count()
+             << endl; // 0x6000012544b8, p1, 4, 4, 4
     }
     // p1~析构函数
 

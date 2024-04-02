@@ -81,8 +81,12 @@ void testMultiTai() {
 //    test01();
     smart_shared_ptr<Circle> p1(new Circle());
     smart_shared_ptr<Circle> p2 = p1;
+    smart_shared_ptr<Circle> p3 = p1;
     p2 = p1;
-    cout << "p2: " << p2.use_count() << endl;
+    p1->print();
+    p2->print();
+    p3->print();
+    cout << "p2: " << p2.use_count() << ", " << p3.use_count() << endl;
 
-
+    
 }
