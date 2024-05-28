@@ -29,8 +29,12 @@ add_executable(testCPP
         houjie/hjVirtual.cpp houjie/hjVirtual.h
         smart_ptr/multiTai.cpp smart_ptr/multiTai.h
         testSmartPtr.cpp testSmartPtr.h
-#        singleton/testSingletonWrong.cpp
+        #        singleton/testSingletonWrong.cpp
         singleton/testSingleton.cpp
-        singleton/testSingleton.h testSize.cpp testSize.h testVirtualPtr.cpp testVirtualPtr.h testSem.cpp testSem.h testTime.cpp testTime.h
+        singleton/testSingleton.h testSize.cpp testSize.h testVirtualPtr.h testVirtualPtr.cpp testVirtualSize.cpp testSem.cpp testSem.h testTime.cpp testTime.h
         cpp_primer/Message.cpp cpp_primer/Message.h cpp_primer/Folder.cpp cpp_primer/Folder.h
-        cpp_primer/StrVec.cpp cpp_primer/StrVec.h cpp_primer/smartPtr_deleter.cpp cpp_primer/smartPtr_deleter.h smart_ptr/smart_unique_ptr.h smart_ptr/smart_shared_ptr.h)
+        cpp_primer/StrVec.cpp cpp_primer/StrVec.h cpp_primer/smartPtr_deleter.cpp cpp_primer/smartPtr_deleter.h
+        smart_ptr/smart_unique_ptr.h smart_ptr/smart_shared_ptr.h
+        effectivecpp/passByReferenceConst.cpp effectivecpp/passByReferenceConst.h
+
+        )

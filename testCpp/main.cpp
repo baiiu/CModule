@@ -26,6 +26,7 @@
 //#include "houjie/multiTai.h"
 #include "cpp_primer/smartPtr_deleter.h"
 #include "smart_ptr/multiTai.h"
+#include "effectivecpp/passByReferenceConst.h"
 
 int main() {
 
@@ -60,7 +61,7 @@ int main() {
 
 //    testSmartPtr();
 //    testDeleter();
-    testMultiTai();
+//    testMultiTai();
 
 //    testSimpleSingleton();
 //    testSingleton();
@@ -68,6 +69,8 @@ int main() {
 //    testSize();
 
 //    testVirtualPtr();
+//    testVirtualSize();
+    testPassByReferenceConst();
 
 //    testSem();
 //    testTime();

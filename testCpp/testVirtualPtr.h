@@ -9,4 +9,6 @@
 
 void testVirtualPtr();
 
+void testVirtualSize();
+
 #endif //TESTCPP_TESTVIRTUALPTR_H
