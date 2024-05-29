@@ -27,6 +27,7 @@
 #include "cpp_primer/smartPtr_deleter.h"
 #include "smart_ptr/multiTai.h"
 #include "effectivecpp/passByReferenceConst.h"
+#include "effectivecpp/effective33.h"
 
 int main() {
 
@@ -70,7 +71,8 @@ int main() {
 
 //    testVirtualPtr();
 //    testVirtualSize();
-    testPassByReferenceConst();
+//    testPassByReferenceConst();
+    test33();
 
 //    testSem();
 //    testTime();

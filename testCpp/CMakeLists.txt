@@ -37,4 +37,4 @@ add_executable(testCPP
         smart_ptr/smart_unique_ptr.h smart_ptr/smart_shared_ptr.h
         effectivecpp/passByReferenceConst.cpp effectivecpp/passByReferenceConst.h
 
-        )
+        effectivecpp/effective33.cpp effectivecpp/effective33.h)
