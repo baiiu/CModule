@@ -73,8 +73,8 @@ int main() {
 //    testVirtualPtr();
 //    testVirtualSize();
 //    testPassByReferenceConst();
-//    test33();
-    test35();
+    test33();
+//    test35();
 
 //    testSem();
 //    testTime();

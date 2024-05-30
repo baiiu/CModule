@@ -38,12 +38,17 @@ public:
 };
 
 class EvilBadGuy : public GameCharacter {
+public:
+    explicit EvilBadGuy(HealthCalcFunc function) : GameCharacter(std::move(function)) {}
 };
 
 class EyeCandyCharacter : public GameCharacter {
+public:
+    explicit EyeCandyCharacter(HealthCalcFunc function) : GameCharacter(std::move(function)) {}
 };
 
 
 void test35() {
-//    EvilBadGuy evilBadGuy(calcHealth);
+    EvilBadGuy evilBadGuy(calcHealth);
+    EyeCandyCharacter eyeCandy(HealthCalculator());
 }
