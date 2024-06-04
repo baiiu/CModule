@@ -29,6 +29,7 @@
 #include "effectivecpp/passByReferenceConst.h"
 #include "effectivecpp/effective33.h"
 #include "effectivecpp/effective35.h"
+#include "moreeffectivecpp/more02.h"
 
 int main() {
 
@@ -73,8 +74,9 @@ int main() {
 //    testVirtualPtr();
 //    testVirtualSize();
 //    testPassByReferenceConst();
-    test33();
+//    test33();
 //    test35();
+    testMore02();
 
 //    testSem();
 //    testTime();

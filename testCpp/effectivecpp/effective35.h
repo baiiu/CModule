@@ -5,7 +5,7 @@
 #ifndef TESTCPP_EFFECTIVE35_H
 #define TESTCPP_EFFECTIVE35_H
 
-#include "../common.h"
+#include "common.h"
 
 void test35();
 

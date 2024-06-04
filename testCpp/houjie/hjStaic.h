@@ -5,7 +5,7 @@
 #ifndef TESTCPP_HJSTAIC_H
 #define TESTCPP_HJSTAIC_H
 
-#include "../common.h"
+#include "common.h"
 
 struct A {
     int a = 5;

@@ -5,7 +5,7 @@
 #ifndef TESTCPP_TESTSPS_H
 #define TESTCPP_TESTSPS_H
 
-#include "../common.h"
+#include "common.h"
 #include "spspps.h"
 
 void testSps();

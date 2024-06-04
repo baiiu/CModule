@@ -5,7 +5,7 @@
 #ifndef TESTCPP_PASSBYREFERENCECONST_H
 #define TESTCPP_PASSBYREFERENCECONST_H
 
-#include "../common.h"
+#include "common.h"
 
 void testPassByReferenceConst();
 

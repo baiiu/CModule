@@ -5,7 +5,7 @@
 #ifndef TESTCPP_MULTITAI_H
 #define TESTCPP_MULTITAI_H
 
-#include "../common.h"
+#include "common.h"
 #include "smart_shared_ptr.h"
 #include "smart_unique_ptr.h"
 

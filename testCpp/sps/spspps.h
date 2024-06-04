@@ -5,7 +5,7 @@
 #ifndef TESTCPP_SPSPPS_H
 #define TESTCPP_SPSPPS_H
 
-#include "../common.h"
+#include "common.h"
 
 typedef struct AVCodecContext {
     uint8_t *extradata;

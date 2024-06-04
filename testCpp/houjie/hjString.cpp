@@ -3,7 +3,7 @@
 //
 
 #include "hjString.h"
-#include "../common.h"
+#include "common.h"
 
 void testString() {
 //    String s1;

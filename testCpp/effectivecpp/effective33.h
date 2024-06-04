@@ -4,7 +4,7 @@
 
 #ifndef TESTCPP_EFFECTIVE33_H
 #define TESTCPP_EFFECTIVE33_H
-#include "../common.h"
+#include "common.h"
 
 void test33();
 
