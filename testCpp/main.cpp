@@ -30,6 +30,7 @@
 #include "effectivecpp/effective33.h"
 #include "effectivecpp/effective35.h"
 #include "moreeffectivecpp/more02.h"
+#include "lambda/testLambda.h"
 
 int main() {
 
@@ -76,7 +77,8 @@ int main() {
 //    testPassByReferenceConst();
 //    test33();
 //    test35();
-    testMore02();
+//    testMore02();
+    testLambda();
 
 //    testSem();
 //    testTime();
