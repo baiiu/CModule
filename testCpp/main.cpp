@@ -68,7 +68,7 @@ int main() {
 //    testMultiTai();
 
 //    testSimpleSingleton();
-//    testSingleton();
+    testSingleton();
 
 //    testSize();
 
@@ -78,7 +78,7 @@ int main() {
 //    test33();
 //    test35();
 //    testMore02();
-    testLambda();
+//    testLambda();
 
 //    testSem();
 //    testTime();

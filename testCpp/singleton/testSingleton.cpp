@@ -96,6 +96,55 @@ public:
 // init static member
 ASimpleSingleton *ASimpleSingleton::instance = NULL;
 
+// call_once
+class SingleWithPtr {
+private:
+    SingleWithPtr(const SingleWithPtr &other) = delete;
+
+    SingleWithPtr &operator=(const SingleWithPtr &other) = delete;
+
+public:
+    SingleWithPtr() = default;
+
+    ~SingleWithPtr() {}
+
+    static std::shared_ptr<SingleWithPtr> getInstance() {
+        static std::shared_ptr<SingleWithPtr> sInstance;
+        static std::once_flag flag;
+        std::call_once(flag, [&]() {
+            sInstance = std::make_shared<SingleWithPtr>();
+        });
+
+        return sInstance;
+    }
+};
+
+class SingletonOnce {
+private:
+    SingletonOnce() = default;
+
+    SingletonOnce(const SingletonOnce &other) = delete;
+
+    SingletonOnce &operator=(const SingletonOnce &other) = delete;
+
+public:
+    ~SingletonOnce() = default;
+
+    void print() {
+        std::cout << "123" << std::endl;
+    }
+
+    static std::shared_ptr<SingletonOnce> getInstance() {
+        static std::shared_ptr<SingletonOnce> _instance;
+        static std::once_flag s_flag;
+        std::call_once(s_flag, [&]() {
+            _instance = std::shared_ptr<SingletonOnce>(new SingletonOnce);
+        });
+        return _instance;
+    }
+};
+
+
 class BestSingle {
 private:
 
@@ -103,9 +152,9 @@ private:
 
     ~BestSingle() {}
 
-    BestSingle(const Singleton &other) = delete;
+    BestSingle(const BestSingle &other) = delete;
 
-    BestSingle &operator=(const Singleton &other) = delete;
+    BestSingle &operator=(const BestSingle &other) = delete;
 
 public:
     static BestSingle &getInstance() {
@@ -113,6 +162,7 @@ public:
         return sInstance;
     }
 };
+
 
 void testSingleton() {
     ASimpleSingleton *a = ASimpleSingleton::getInstance();
@@ -123,4 +173,10 @@ void testSingleton() {
 
     BestSingle &d = BestSingle::getInstance();
     cout << &d << endl;
+
+    SingleWithPtr::getInstance();
+
+    std::shared_ptr<SingletonOnce> ptr = SingletonOnce::getInstance();
+    ptr->print();
+
 }
