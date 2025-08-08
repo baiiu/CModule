@@ -9,4 +9,9 @@
 
 void testLambda();
 
+void testFunction();
+
+void testFunction2();
+
+
 #endif //TESTCPP_TESTLAMBDA_H

@@ -36,6 +36,11 @@ add_executable(testCPP
         cpp_primer/Message.cpp cpp_primer/Message.h cpp_primer/Folder.cpp cpp_primer/Folder.h
         cpp_primer/StrVec.cpp cpp_primer/StrVec.h cpp_primer/smartPtr_deleter.cpp cpp_primer/smartPtr_deleter.h
         smart_ptr/smart_unique_ptr.h smart_ptr/smart_shared_ptr.h
-        effectivecpp/passByReferenceConst.cpp effectivecpp/passByReferenceConst.h
+        lambda/testLambda.cpp lambda/testLambda.h lambda/testFunction.cpp
+        lambda/testFunction2.cpp
 
-        effectivecpp/effective33.cpp effectivecpp/effective33.h effectivecpp/effective35.cpp effectivecpp/effective35.h moreeffectivecpp/more02.cpp moreeffectivecpp/more02.h lambda/testLambda.cpp lambda/testLambda.h)
+        effectivecpp/passByReferenceConst.cpp effectivecpp/passByReferenceConst.h
+        effectivecpp/effective33.cpp effectivecpp/effective33.h effectivecpp/effective35.cpp effectivecpp/effective35.h moreeffectivecpp/more02.cpp moreeffectivecpp/more02.h
+
+
+        )
