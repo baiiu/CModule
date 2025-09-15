@@ -43,4 +43,4 @@ add_executable(testCPP
         effectivecpp/effective33.cpp effectivecpp/effective33.h effectivecpp/effective35.cpp effectivecpp/effective35.h moreeffectivecpp/more02.cpp moreeffectivecpp/more02.h
 
 
-        )
+        testMap.cpp testMap.h)

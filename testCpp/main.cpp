@@ -31,6 +31,7 @@
 #include "effectivecpp/effective35.h"
 #include "moreeffectivecpp/more02.h"
 #include "lambda/testLambda.h"
+#include "testMap.h"
 
 int main() {
 
@@ -80,7 +81,8 @@ int main() {
 //    testMore02();
 //    testLambda();
 //    testFunction();
-    testFunction2();
+//    testFunction2();
+    testMap();
 
 //    testSem();
 //    testTime();
